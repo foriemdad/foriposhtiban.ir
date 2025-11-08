@@ -1,129 +1,99 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>فوری پشتیبان | تعمیرات لوازم خانگی در تبریز</title>
-  <link rel="stylesheet" href="blog.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>بلاگ | فوری پشتیبان</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 🔷 Header -->
-  <header class="header">
-    <div class="container header-flex row-reverse" role="navigation" aria-label="هدر سایت">
-      
-      <!-- Call button -->
-      <a href="tel:09149896976" class="call-button" aria-label="تماس با فوری پشتیبان">
-        📞 تماس: 09149896976
-      </a>
+  <!-- Header -->
+  <header class="header" role="navigation" aria-label="هدر سایت">
+    <div class="container header-flex row-reverse">
+      <a href="tel:09149896976" class="call-button" aria-label="تماس با فوری پشتیبان">📞 تماس: 09149896976</a>
 
-      <!-- Center group -->
-      <div class="header-center" style="display:flex;align-items:center;gap:18px;white-space:nowrap;">
+      <div class="header-center">
         <a href="https://foriposhtiban.ir" class="site-name" title="صفحه اصلی فوری پشتیبان">فوری پشتیبان</a>
-        
+
         <a href="/blog.html"
            class="header-link blog-link"
            title="بلاگ فوری پشتیبان"
-           aria-label="بلاگ فوری پشتیبان"
-           style="display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.08);font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,0.08);">
+           aria-label="بلاگ فوری پشتیبان">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span style="display:inline-block;transform:translateY(-1px);">بلاگ</span>
+          <span>بلاگ</span>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- 🔶 About Section -->
-  <section class="about">
-    <div class="container about-flex">
-      <div class="about-image">
-        <img src="technician.png" alt="تعمیرکار لوازم خانگی" />
-      </div>
-      <div class="about-text">
-        <h1>فوری پشتیبان</h1>
-        <p>
-          فوری پشتیبان تخصص ما ارائه خدمات تعمیر سریع، حرفه‌ای و تضمینی انواع لوازم خانگی از جمله یخچال، لباسشویی، ظرفشویی و پکیج دیواری در سطح تبریز است.
-          خدمات ما با استفاده از قطعات اصلی و توسط تعمیرکاران متخصص انجام می‌شود. با ارائه ضمانت‌نامه معتبر و قیمت مناسب، رضایت مشتریان را جلب کرده‌ایم.
-          اگر به دنبال خدمات تعمیر در منزل هستید، کافیست با ما تماس بگیرید.
-        </p>
-        <div class="about-buttons">
-          <a href="#about" class="btn">درباره ما</a>
-          <a href="#request" class="btn btn-outline">درخواست آنلاین سرویس</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Main content -->
+  <main>
+    <section class="blog-carousel container" aria-labelledby="blog-heading" style="padding-top:28px;padding-bottom:6px;">
+      <h1 id="blog-heading" style="margin:0 0 18px;color:var(--brand);font-size:28px;">آخرین مطالب بلاگ</h1>
+      <p style="margin:0 0 20px;background:var(--muted);padding:12px;border-radius:8px;">
+        راهنمای نگهداری، رفع عیب و نکات ساده برای افزایش عمر وسایل خانگی. هر هفته یک پست جدید منتشر می‌کنیم.
+      </p>
 
-  <!-- 🔸 Services Grid -->
-  <section class="services">
-    <div class="container">
-      <h2>خدمات ما</h2>
-      <div class="grid-4">
-        <div class="service-box">
-          <h3>تعمیر یخچال</h3>
-          <p>رفع نشتی، تعویض کمپرسور، شارژ گاز و سرویس کامل.</p>
-        </div>
-        <div class="service-box">
-          <h3>تعمیر لباسشویی</h3>
-          <p>رفع ارور، تعویض بلبرینگ، تعمیر برد و موتور.</p>
-        </div>
-        <div class="service-box">
-          <h3>تعمیر پکیج دیواری</h3>
-          <p>سرویس دوره‌ای، تنظیم فشار، تعمیر مشعل و برد.</p>
-        </div>
-        <div class="service-box">
-          <h3>تعمیر ظرفشویی</h3>
-          <p>رفع نشتی، تعمیر پمپ تخلیه، تعویض المنت و برد.</p>
+      <!-- Posts grid -->
+      <div class="grid-4" style="margin-top:18px;">
+        <!-- Article 1 -->
+        <article class="post" aria-label="نکات نگهداری یخچال در تابستان">
+          <h2 style="margin:0 0 8px;color:var(--brand);font-size:18px;">نکات نگهداری یخچال در تابستان</h2>
+          <p style="margin:0 0 12px;color:var(--text);">چگونه با چند کار ساده مصرف انرژی یخچال را کاهش دهیم و از خراب شدن آن جلوگیری کنیم.</p>
+          <a href="/posts/fridge-summer.html" class="btn" style="display:inline-block;margin-top:8px;">مشاهده مطلب</a>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="post" aria-label="چرا لباسشویی آب تخلیه نمی‌کند">
+          <h2 style="margin:0 0 8px;color:var(--brand);font-size:18px;">چرا لباسشویی آب تخلیه نمی‌کند؟</h2>
+          <p style="margin:0 0 12px;color:var(--text);">گام‌به‌گام برای تشخیص علت و راهکارهای سریع پیش از تماس با تعمیرکار.</p>
+          <a href="/posts/washing-drain.html" class="btn" style="display:inline-block;margin-top:8px;">مشاهده مطلب</a>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="post" aria-label="راهنمای سرویس پکیج دیواری">
+          <h2 style="margin:0 0 8px;color:var(--brand);font-size:18px;">راهنمای سرویس پکیج دیواری</h2>
+          <p style="margin:0 0 12px;color:var(--text);">چه مواردی را موقع سرویس باید چک کنید و چه زمانی نیاز به تعویض قطعات است.</p>
+          <a href="/posts/boiler-service.html" class="btn" style="display:inline-block;margin-top:8px;">مشاهده مطلب</a>
+        </article>
+
+        <!-- Article 4 (نمونه بیشتر) -->
+        <article class="post" aria-label="رفع نشتی ظرفشویی">
+          <h2 style="margin:0 0 8px;color:var(--brand);font-size:18px;">رفع نشتی ظرفشویی در ۵ مرحله</h2>
+          <p style="margin:0 0 12px;color:var(--text);">روش‌های ساده برای پیدا کردن منبع نشتی و زمان تماس با تعمیرکار.</p>
+          <a href="/posts/dishwasher-leak.html" class="btn" style="display:inline-block;margin-top:8px;">مشاهده مطلب</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Optional sidebar or category list -->
+    <aside class="container" style="margin-top:26px;">
+      <div style="display:flex;gap:18px;flex-wrap:wrap;">
+        <nav style="flex:1;min-width:220px;">
+          <h3 style="margin:0 0 8px;color:var(--brand);">دسته‌بندی‌ها</h3>
+          <ul style="padding:0;margin:0;list-style:none;">
+            <li><a href="/category/maintenance.html" style="display:block;padding:8px 0;color:var(--text)">نگهداری</a></li>
+            <li><a href="/category/troubleshoot.html" style="display:block;padding:8px 0;color:var(--text)">عیب‌یابی</a></li>
+            <li><a href="/category/tips.html" style="display:block;padding:8px 0;color:var(--text)">نکات</a></li>
+          </ul>
+        </nav>
+
+        <div style="flex:2;min-width:280px;">
+          <h3 style="margin:0 0 8px;color:var(--brand);">مطالب پیشنهادی</h3>
+          <div class="post" style="padding:12px;">
+            <strong>چگونه عمر یخچال را افزایش دهیم</strong>
+            <p style="margin:8px 0 0;color:var(--text);">سه عادت ساده که کمک می‌کند یخچال شما کمتر نیاز به تعمیر پیدا کند.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </aside>
+  </main>
 
-  <!-- 🔁 Blog Carousel -->
-  <section class="blog-carousel" id="blog">
-    <div class="container">
-      <h2>آخرین مطالب بلاگ</h2>
-      <div class="carousel">
-        <div class="post">نکات نگهداری یخچال در تابستان</div>
-        <div class="post">چرا لباسشویی آب تخلیه نمی‌کند؟</div>
-        <div class="post">راهنمای سرویس پکیج دیواری</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ❓ FAQ Accordion -->
-  <section class="faq">
-    <div class="container">
-      <h2>سوالات متداول</h2>
-      <div class="accordion">
-        <div class="item">
-          <button class="question">آیا خدمات در محل انجام می‌شود؟</button>
-          <div class="answer">بله، تکنسین‌های ما در محل شما حاضر می‌شوند.</div>
-        </div>
-        <div class="item">
-          <button class="question">آیا قطعات تعویضی گارانتی دارند؟</button>
-          <div class="answer">بله، تمامی قطعات دارای ضمانت معتبر هستند.</div>
-        </div>
-        <div class="item">
-          <button class="question">هزینه تعمیرات چگونه محاسبه می‌شود؟</button>
-          <div class="answer">بر اساس نوع خرابی، قطعات مورد نیاز و زمان صرف‌شده.</div>
-        </div>
-        <div class="item">
-          <button class="question">آیا امکان پرداخت آنلاین وجود دارد؟</button>
-          <div class="answer">بله، لینک پرداخت امن برای شما ارسال خواهد شد.</div>
-        </div>
-        <div class="item">
-          <button class="question">آیا خدمات شامل نصب مجدد دستگاه هم می‌شود؟</button>
-          <div class="answer">در صورت نیاز، نصب مجدد نیز انجام می‌شود.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ⚫ Footer -->
-  <footer class="footer">
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo" aria-label="فوتر سایت" style="margin-top:36px;">
     <div class="container footer-flex">
       <div class="footer-left">
         <h2>فوری پشتیبان</h2>
@@ -135,25 +105,16 @@
         <p>📍 تبریز، خیابان بیلانکوه شرقی</p>
       </div>
     </div>
-    <div class="copyright-box">
-      <p>تمام حقوق این وبسایت متعلق به فوری پشتیبان می‌باشد.</p>
+
+    <div class="container" style="margin-top:12px;">
+      <div class="copyright-box">
+        <p>تمام حقوق این وبسایت متعلق به فوری پشتیبان می‌باشد.</p>
+      </div>
     </div>
   </footer>
 
-  <!-- 📱 Fixed Mobile Call Button -->
+  <!-- Mobile call button -->
   <a href="tel:09149896976" class="mobile-call-button" aria-hidden="false">📞</a>
-
-  <!-- 🧠 FAQ Script -->
-  <script>
-    document.querySelectorAll('.question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('active');
-        const answer = btn.nextElementSibling;
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  </script>
 
 </body>
 </html>
-
